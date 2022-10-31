@@ -34,12 +34,6 @@ $( document ).ready(function() {
       window.location.replace(redirect);
     }
 
-    $(function(){
-    //hide&show menu
-    $("#btn").on("click",function(){
-        $("#menu").toggleClass("hidden");
-    });
-});
 
     // Search button has been clicked
     $( "#search_button" ).click(function() {
@@ -74,3 +68,10 @@ $( document ).ready(function() {
       }); 
     }); 
   }); 
+
+      $(function(){
+    //hide&show menu
+    $("#btn").on("click",function(){
+        $("#menu").toggleClass("hidden");
+    });
+});

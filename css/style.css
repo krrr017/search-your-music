@@ -3,6 +3,31 @@ body{
     background-color: #FDD818;;
 }
 
+.title {
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+}
+
+.title p {
+  position: absolute;
+  left: 71.39%;
+  right: 2.29%;
+  top: 1.27%;
+  bottom: 94.92%;
+
+  font-family: 'Aldrich', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 /* Make Spotify Songs Look More Round */
 iframe {
   border-radius: 30px;

@@ -1,6 +1,11 @@
 // Document has been loaded
 
-
+      $(function(){
+    //hide&show menu
+    $("#btn").on("click",function(){
+        $("#menu").toggleClass("hidden");
+    });
+});
 
 
 $( document ).ready(function() {
@@ -69,9 +74,4 @@ $( document ).ready(function() {
     }); 
   }); 
 
-      $(function(){
-    //hide&show menu
-    $("#btn").on("click",function(){
-        $("#menu").toggleClass("hidden");
-    });
-});
+

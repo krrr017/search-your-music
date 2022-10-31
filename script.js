@@ -21,10 +21,10 @@ $( document ).ready(function() {
 
     // AUTHORIZE with Spotify (if needed)
     // *************** REPLACE THESE VALUES! *************************
-    let client_id = '55de4bc8cf684c6482f0f6e7fda5438c';
+    let client_id = '106fff47041d4bceb245e55ed1575fa8';
     // Use the following site to convert your regular url to the encoded version:
     // https://www.url-encode-decode.com/
-    let redirect_uri = 'https%3A%2F%2Fkrrr017.github.io%2FSearch-music'; // GitHub Pages URL or whatever your public url to this app is
+    let redirect_uri = 'https%3A%2F%2Fkrrr017.github.io%2Fsearch-your-music'; // GitHub Pages URL or whatever your public url to this app is
     // *************** END *************************
 
     const redirect = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${redirect_uri}`;

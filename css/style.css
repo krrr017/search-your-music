@@ -18,12 +18,12 @@ body{
   top: 28px;
 }
 
-.title p {
+.title a {
   position: absolute;
   left: 71.39%;
   top: 27px;
   bottom: 94.92%;
-
+  text-decoration: none;
   font-family: 'Aldrich', sans-serif;
   font-weight: 400;
   font-size: 40px;

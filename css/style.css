@@ -1,6 +1,13 @@
-/* Have a Spotify Themed Background */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body{
-    background-color: #FDD818;;
+    background-color: #FDD818;
+    display: flex;
 }
 
 .title {

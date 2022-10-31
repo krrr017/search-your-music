@@ -1,6 +1,4 @@
-// Document has been loaded
-
-      $(function(){
+$(function(){
     //hide&show menu
     $("#btn").on("click",function(){
         $("#menu").toggleClass("hidden");
@@ -9,9 +7,8 @@
 
 
 $( document ).ready(function() {
-     // Helper Function to Extract Access Token for URL
     const getUrlParameter = (sParam) => {
-      let sPageURL = window.location.search.substring(1),////substring will take everything after the https link and split the #/&
+      let sPageURL = window.location.search.substring(1),
           sURLVariables = sPageURL != undefined && sPageURL.length > 0 ? sPageURL.split('#') : [],
           sParameterName,
           i;
@@ -30,11 +27,10 @@ $( document ).ready(function() {
 
     // AUTHORIZE with Spotify 
     let client_id = '106fff47041d4bceb245e55ed1575fa8';
-    let redirect_uri = 'https%3A%2F%2Fkrrr017.github.io%2Fsearch-your-music'; // GitHub Pages URL or whatever your public url to this app is
-    // *************** END *************************
+    let redirect_uri = 'https%3A%2F%2Fkrrr017.github.io%2Fsearch-your-music'; 
+    // 
 
     const redirect = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${redirect_uri}`;
-    // Don't authorize if we have an access token already
     if(accessToken == null || accessToken == "" || accessToken == undefined){
       window.location.replace(redirect);
     }
@@ -46,7 +42,6 @@ $( document ).ready(function() {
       let raw_search_query = $('#search-text').val();
       let search_query = encodeURI(raw_search_query);
       // Make Spotify API call
-      // Note: We are using the track API endpoint.
       $.ajax({
         url: `https://api.spotify.com/v1/search?q=${search_query}&type=track`,
         type: 'GET',

@@ -1,11 +1,6 @@
 // Document has been loaded
 
-$(function(){
-    //hide&show menu
-    $("#btn").on("click",function(){
-        $("#menu").toggleClass("hidden");
-    });
-});
+
 
 
 $( document ).ready(function() {
@@ -39,7 +34,12 @@ $( document ).ready(function() {
       window.location.replace(redirect);
     }
 
-    
+    $(function(){
+    //hide&show menu
+    $("#btn").on("click",function(){
+        $("#menu").toggleClass("hidden");
+    });
+});
 
     // Search button has been clicked
     $( "#search_button" ).click(function() {

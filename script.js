@@ -1,4 +1,13 @@
 // Document has been loaded
+
+$(function(){
+    //hide&show menu
+    $("#btn").on("click",function(){
+        $("#menu").toggleClass("hidden");
+    });
+});
+
+
 $( document ).ready(function() {
      // Helper Function to Extract Access Token for URL
     const getUrlParameter = (sParam) => {
@@ -19,11 +28,8 @@ $( document ).ready(function() {
     // Get Access Token
     const accessToken = getUrlParameter('access_token');
 
-    // AUTHORIZE with Spotify (if needed)
-    // *************** REPLACE THESE VALUES! *************************
+    // AUTHORIZE with Spotify 
     let client_id = '106fff47041d4bceb245e55ed1575fa8';
-    // Use the following site to convert your regular url to the encoded version:
-    // https://www.url-encode-decode.com/
     let redirect_uri = 'https%3A%2F%2Fkrrr017.github.io%2Fsearch-your-music'; // GitHub Pages URL or whatever your public url to this app is
     // *************** END *************************
 
@@ -32,6 +38,8 @@ $( document ).ready(function() {
     if(accessToken == null || accessToken == "" || accessToken == undefined){
       window.location.replace(redirect);
     }
+
+    
 
     // Search button has been clicked
     $( "#search_button" ).click(function() {
@@ -63,6 +71,6 @@ $( document ).ready(function() {
             count++;
           }
         }
-      }); // End of Spotify ajax call
-    }); // End of search button
-  }); // End of document.ready
+      }); 
+    }); 
+  }); 

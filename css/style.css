@@ -33,6 +33,71 @@ body{
   color: #FFFFFF;
 }
 
+.btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 25px;
+  top: 46%;
+  z-index: 1;
+}
+
+#menu {
+  width: 280px;
+
+  opacity: 1;
+  transform: translateX(0%);
+  transition: linear 1s;
+}
+
+
+#menu.hidden {
+  width: 280px;
+  height: 560px;
+  display: flex;
+
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: linear 1s;
+}
+
+
+.record {
+  padding: 0;
+  top: 15%;
+  position: absolute;
+  width: 280px;
+  height: 560px;
+}
+
+.icon {
+  width: 280px;
+  height: 560px;
+  margin-top: 36%;
+}
+
+.icon img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+
+.icon1 {
+  left: 16%;
+  top: 23%;
+}
+
+.icon2 {
+  left: 50%;
+  top: 44%;
+}
+
+.icon3 {
+  left: 16%;
+  top: 64%;
+}
+
 /* Make Spotify Songs Look More Round */
 iframe {
   border-radius: 30px;
